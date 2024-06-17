@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: discord-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python boss.py"
+    envVars:
+      - key: status
+        value: "online"
+      - key: custom_status
+        value: ""
+      - key: emoji_name
+        value: ""
+      - key: emoji_id
+        value: ""
+      - key: emoji_animated
+        value: "false"
+      - key: client_id
+        value: "YOUR_DISCORD_APP_CLIENT_ID"
+      - key: large_image
+        value: ""
+      - key: large_text
+        value: ""
+      - key: small_image
+        value: ""
+      - key: small_text
+        value: ""
+      - key: details
+        value: ""
+      - key: state
+        value: ""
+      - key: mode
+        value: "playing"
+      - key: token
+        value: "YOUR_DISCORD_BOT_TOKEN"
